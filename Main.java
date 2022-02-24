@@ -2,28 +2,33 @@ package collection;
 
 public class Main {
     public static void main(String[] args) {
-//        ArrayCollection collection = new ArrayCollection();
-//        collection.add("Bag 1");
-//        collection.add("Bag 2");
-//        collection.add("Bag 3");
-//        collection.add("Bag 4");
-//        collection.add("Bag 5");
-//        collection.add("Bag 6");
-//        System.out.println(collection.toString());
-//        Iterator it;
-//        for(it = collection.iterator(); it.hasNext();){
-//            System.out.println(it.next());
-//        }
-//        System.out.println("Size: " + collection.size());
-//        
-//        
-//        
-//        System.out.println("Collection contains: ? " + collection.contains("Bag 4"));
-//        collection.remove("Bag 2");
-//        for(it = collection.iterator(); it.hasNext();){
-//            System.out.println(it.next());
-//        }
         
+        //ArrayCollection Implementation
+        
+       ArrayCollection collection = new ArrayCollection();
+       collection.add("Bag 1");
+       collection.add("Bag 2");
+       collection.add("Bag 3");
+       collection.add("Bag 4");
+       collection.add("Bag 5");
+       collection.add("Bag 6");
+       System.out.println(collection.toString());
+       Iterator it;
+       for(it = collection.iterator(); it.hasNext();){
+           System.out.println(it.next());
+       }
+       System.out.println("Size: " + collection.size());
+       
+       
+       
+       System.out.println("Collection contains: ? " + collection.contains("Bag 4"));
+       collection.remove("Bag 2");
+       for(it = collection.iterator(); it.hasNext();){
+           System.out.println(it.next());
+       }
+       System.out.println("Size: " + collection.size());
+        
+        //LinkedCollection Implementation
 
         LinkedCollection linkCol = new LinkedCollection();
         linkCol.add(13);
@@ -31,7 +36,6 @@ public class Main {
         linkCol.add(33);
         linkCol.add(42);
         linkCol.add(5);
-//        linkCol.remove("Zohaib");
         System.out.println(linkCol.sum());
         System.out.println(linkCol.average());
         System.out.println(linkCol.highest());
